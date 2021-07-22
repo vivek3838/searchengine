@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+  <body>
+<div class="left">
+  <h1 class="eng">Engine</h1>
+  <form class="search" action="/" method="post">
+    <input type="text" name="newinputforsearch" value="" class="box">
+    <button type="submit" name="button" class="btn btn-primary">Search</button>
+  </form>
+
+</div>
+
+<div class="left">
+
+
+  <% for(var i=0;i<questio.length;i++){ %>
+    <h2 >
+      <%= contens[i] %>
+    </h2>
+    <a href="<%= link[i] %>"><%= link[i] %> </a>
+    <p>
+      ID: <%= questio[i] %>
+    </p>
+    <p>
+      Tags: <%= tag[i] %>
+    </p>
+    <hr>
+  <% } %>
+
+
+</div>
+
+
+
+
+  </body>
+
+  </div>
+  <div class="footer-padding"></div>
+    <div class="footer">
+      <p>Made with ❤️ by Vivek Gupta</p>
+    </div>
+  </div>
+  </body>
+  </html>
+</html>
